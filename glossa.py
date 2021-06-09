@@ -101,7 +101,7 @@ def text_synonyms(sentence,from_language, target_language):
 st.sidebar.title('Glossa :memo:')
 st.sidebar.text("@ your service")
 st.sidebar.title('Page Selection Menu')
-page = st.sidebar.radio("Select Page:",("Text to Text translation","Image OCR","What's this called?",'How "j" say it?',"Chatbot"))
+page = st.sidebar.radio("Select Page:",("Text to Text translation","Image OCR","What's this called?",'How "j" say it?'))
 
 
 if page == "Text to Text translation":
