@@ -18,7 +18,7 @@ import uuid
 import json
 
 # New environment, 'azure', created in conda for this project.
-st.set_page_config(page_title="Glossa", page_icon="📝") 
+st.set_page_config(page_title="Team 14", page_icon="📝") 
 
 
 def text_to_text_translation(sentence,target_language):
@@ -98,15 +98,15 @@ def text_synonyms(sentence,from_language, target_language):
 
 
 
-st.sidebar.title('Glossa :memo:')
+st.sidebar.title('Team 14 :memo:')
 st.sidebar.text("@ your service")
 st.sidebar.title('Page Selection Menu')
 page = st.sidebar.radio("Select Page:",("Text to Text translation","Image OCR","What's this called?",'How "j" say it?'))
 
 
 if page == "Text to Text translation":
-	st.title('Azure AI Hackathon 🤖')
-	st.title('Glossa :memo:')
+	#st.title('Azure AI Hackathon 🤖')
+	st.title('Azure NLP Web App :memo:')
 	st.markdown("*Your Language Assistant*")
 	st.info("Select Page from Sidebar to the left")
 	st.title('Text to Text Translation :u5408: ↔️ :capital_abcd:')
@@ -163,7 +163,7 @@ if page == "Text to Text translation":
 
 
 elif page == "Image OCR":
-	st.title('Glossa :memo:')
+	st.title('Azure NLP Web App :memo:')
 	st.markdown("*Your Language Assistant*")
 	st.title('Image OCR 🖼️ ↔️ 🔤 ↔️ 🈴')
 	st.markdown("Upload Image and get it's text extracted in language of your choice.")
@@ -236,7 +236,7 @@ elif page == "Image OCR":
 
 
 elif page == "What's this called?":
-	st.title('Glossa :memo:')
+	st.title('Azure NLP Web App :memo:')
 	st.markdown("*Your Language Assistant*")
 	st.title('Image Captioning 🖼️ ↔️ 📃➕🗞️')
 	st.markdown("Upload an Image, get it's textual description in language of your choice and be able to search content related to it.")
@@ -300,7 +300,7 @@ elif page == "What's this called?":
 				    
 				    				    
 elif page == 'How "j" say it?':
-	st.title('Glossa :memo:')
+	st.title('Azure NLP Web App :memo:')
 	st.markdown("*Your Language Assistant*")
 	st.title('How "j" say it  ✍️  ↔️ ✔️  ↔️ 🗣️')
 	st.markdown("This feature helps you get better at writing and speaking English.")	
