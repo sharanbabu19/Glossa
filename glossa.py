@@ -121,7 +121,7 @@ if page == "Text to Text translation":
 
 	source = st.text_area("Enter sentence (Language auto-detection enabled):","")
 # 	target = st.selectbox("Select Target Language  🈴:","English")
-	target=st.selectbox("English")
+	target = st.selectbox("Select Target Language  🈴:",("English",""))
 
 	if st.button("Translate"):
 		if source == "":
