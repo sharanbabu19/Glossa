@@ -180,7 +180,7 @@ elif page == "Image OCR":
 	image = st.file_uploader("Upload Image:",type=['jpg','png','jpeg','JPG','PNG','JPEG'])
 	st.write("")
 	st.write("")
-	dest = st.selectbox("Select Target Language  🈴:","English")
+	dest = st.selectbox("Select Target Language  🈴:",("English",""))
 
 	st.write("")
 	if st.button('Process'):
@@ -253,7 +253,7 @@ elif page == "What's this called?":
 	picture = st.file_uploader("Upload Image:",type=['jpg','png','jpeg','JPG','PNG','JPEG'])
 	st.write("")
 	st.write("")
-	dest = st.selectbox("Select Target Language  🈴:","English")
+	dest = st.selectbox("Select Target Language  🈴:",("English",""))
 	st.write("")
 	st.write("")
 	if st.button('Generate'):
