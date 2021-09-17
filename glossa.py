@@ -111,7 +111,7 @@ if page == "Text to Text translation":
 	st.info("Select Page from Sidebar to the left")
 	st.title('Text to Text Translation :u5408: ↔️ :capital_abcd:')
 	st.markdown("Translate text from one language to another, get synonyms if available and listen to the pre-configured voice outputs.")
-	examples = st.beta_expander("Example sentences:",expanded=False)
+	examples = st.expander("Example sentences:",expanded=False)
 	examples.markdown("**English:**")
 	examples.markdown('Hi, how are you?')
 	examples.markdown("**French:**")
@@ -170,8 +170,8 @@ elif page == "Image OCR":
 	st.markdown("Upload Image and get it's text extracted in language of your choice.")
 
 	st.write("")
-	sample_images = st.beta_expander("Sample Images:",expanded=False)
-	col_1, col_2 = sample_images.beta_columns(2)
+	sample_images = st.expander("Sample Images:",expanded=False)
+	col_1, col_2 = sample_images.columns(2)
 	col_1.image('example_text.PNG')
 	col_2.image('text_sample.jpg')
 	st.write("")
@@ -188,7 +188,7 @@ elif page == "Image OCR":
 			st.error("Please upload a valid image first.")
 		else:
 			full_text=""
-			uploaded_image = st.beta_expander("Uploaded Image:",expanded=True)
+			uploaded_image = st.expander("Uploaded Image:",expanded=True)
 			uploaded_image.image(image)
 			st.write("")
 			st.write("")
@@ -243,8 +243,8 @@ elif page == "What's this called?":
 	st.markdown("Upload an Image, get it's textual description in language of your choice and be able to search content related to it.")
 
 	st.write("")
-	sample_image = st.beta_expander("Sample Images:",expanded=False)
-	col_1, col_2 = sample_image.beta_columns(2)
+	sample_image = st.expander("Sample Images:",expanded=False)
+	col_1, col_2 = sample_image.columns(2)
 	col_1.image('landmark.jpg')
 	col_2.image('text_sample.jpg')
 	st.write("")
@@ -263,7 +263,7 @@ elif page == "What's this called?":
 			cog_key = "a2bbcdeb645342eb815710df027d72b0"
 			cog_endpoint = "https://aiocr-1.cognitiveservices.azure.com/"
 			computervision_client = ComputerVisionClient(cog_endpoint, CognitiveServicesCredentials(cog_key))
-			uploaded_image = st.beta_expander("Uploaded Image:",expanded=True)
+			uploaded_image = st.expander("Uploaded Image:",expanded=True)
 			uploaded_image.image(picture)
 			st.write("")
 			st.write("")
@@ -307,7 +307,7 @@ elif page == 'How "j" say it?':
 	st.markdown("This feature helps you get better at writing and speaking English.")	
 	st.markdown("Type an English sentence, get the spellings corrected and receive the pronunciation for the same.")	
 	st.write("")
-	sample_query = st.beta_expander("Example sentence:",expanded=False)
+	sample_query = st.expander("Example sentence:",expanded=False)
 	sample_query.markdown("Ho aer yu?")
 	st.write("")
 	#st.write("")
